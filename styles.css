@@ -8,9 +8,19 @@
 	font-size: 40px;
 	width:60px;
 }
+
+.scale {
+	position: absolute;
+    left: calc(50% - 439px);
+    top: 400px;
+    height: 300px;
+}
 .wrapper {
 	width:875px;
 	margin: 0 auto;
+
+	position: absolute;
+	bottom:0;
 }
 
 .wrapper-arrow {
@@ -18,11 +28,6 @@
     position: relative;
     top: 20px;
 }
-
-.scale {
-	/*text-align:center;*/
-}
-
 .arrow {
 	width:calc(39px*7 - 2px);
 	height:calc(39px*7/2 + 20px);
