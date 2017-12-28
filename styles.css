@@ -51,7 +51,6 @@
 }
 
 #firstArrow, #secondArrow, #firstNumberInput, #secondNumberInput {
-	/*display: none;*/
 	opacity: 0;
 }
 
@@ -71,7 +70,6 @@
 	content: '';
 	position:absolute;
 	right:-13px;
-	/*top:calc( (39px*7/2) - 74px);*/
 	top:41%;
 	width: 10px;
 	height: 13px;
