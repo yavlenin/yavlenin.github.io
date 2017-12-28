@@ -1,0 +1,98 @@
+.example {
+	font-size:40px;
+	text-align:center;
+	margin-bottom:200px;
+	margin-top:100px;
+}
+.example input {
+	font-size: 40px;
+	width:60px;
+}
+.wrapper {
+	width:875px;
+	margin: 0 auto;
+}
+
+.wrapper-arrow {
+	overflow: hidden;
+    position: relative;
+    top: 20px;
+}
+
+.scale {
+	/*text-align:center;*/
+}
+
+.arrow {
+	width:calc(39px*7 - 2px);
+	height:calc(39px*7/2 + 20px);
+	position:relative;
+	left:35px;
+	top:calc( (39px*7/2) - 50px);
+	border: 2px solid purple;
+	border-radius: 50%;
+	display:inline-block;
+}
+
+.arrow2 {
+	width:calc(39px*4 - 2px);
+	height:calc(39px*4/2 + (4*3px));
+	position:relative;
+	left:calc(30px);
+	top:calc( (39px*4/2) - (4*7px));
+	border: 2px solid purple;
+	border-radius: 50%;
+	display:inline-block;
+}
+
+#firstArrow, #secondArrow, #firstNumberInput, #secondNumberInput {
+	/*display: none;*/
+	opacity: 0;
+}
+
+.arrow::before, .arrow2::before {
+	content: '';
+	position:absolute;
+	right:1px;
+	/*top:calc( (39px*7/2) - 70px);*/
+	top:43%;
+	width: 10px;
+	height: 10px;
+	border-top:2px solid purple;
+	transform: rotate(45deg);
+}
+
+.arrow::after, .arrow2::after {
+	content: '';
+	position:absolute;
+	right:-13px;
+	/*top:calc( (39px*7/2) - 74px);*/
+	top:41%;
+	width: 10px;
+	height: 13px;
+	border-left:2px solid purple;
+	transform: rotate(10deg);
+}
+
+
+#firstNumberInput, #secondNumberInput {
+	position: absolute;
+	top:-35px;
+	width:12px;
+	font-size:20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#finished {
+	position: fixed;
+	left:calc(50% - 100px);
+	top:25%;
+	font-size:60px;
+	opacity:0;
+	z-index:-1;
+	text-align: center;
+}

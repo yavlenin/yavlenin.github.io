@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="example">
+            <span id="firstNumber">7</span> + <span id="secondNumber">4</span> = <input id="resultNumber" readonly="" style="border:0" value="?" maxlength="2">
+        </div>
+        <div class="scale">
+            <div class="wrapper">
+                <div class="wrapper-arrow">
+                    <div class="arrow" id="firstArrow">
+                        <input type="text" id="firstNumberInput" maxlength="1" pattern="\d">
+                    </div>
+                    <div class="arrow2" id="secondArrow">
+                        <input type="text" id="secondNumberInput" maxlength="1" pattern="\d">
+                    </div>
+                </div>
+                <img src="sprite.png">
+            </div>
+        </div>
+
+        <div id="finished">
+            Верно!<br>
+            <button id="next">Далее</button>
+        </div>
+        
+    </body>
+</html>
